@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreeApp - Login</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container" id="login-container"> 
+        
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Bem vindo de volta!</h2>
+                <p class="description description-primary">Para se manter conectado conosco</p>
+                <p class="description description-primary">por favor faça login com suas informações pessoais</p>
+                <button id="signin" class="btn btn-primary">Entrar</button> 
+            </div>  
+            <div class="second-column">
+                <h2 class="title title-second">Criar uma conta</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#" id="btn-google-register"> 
+                            <li class="item-social-media">
+                                <i class="fab fa-google-plus-g"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <p class="description description-second">ou use seu e-mail para inscrição:</p>
+                <form class="form" id="register-form">
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Nome" id="input-name-register"> 
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email" id="input-email-register">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha" id="input-password-register">
+                    </label>
+                    <button class="btn btn-second" id="btn-register" type="submit">Registrar</button> 
+                </form>
+            </div>
+        </div>
+        
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Olá amigo!</h2>
+                <p class="description description-primary">Insira seus dados pessoais</p>
+                <p class="description description-primary">e comece a jornada conosco</p>
+                <button id="signup" class="btn btn-primary">Inscrever-se</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Faça login</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#" id="btn-google-login"> 
+                            <li class="item-social-media">
+                                <i class="fab fa-google-plus-g"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <p class="description description-second">ou use sua conta de e-mail:</p>
+                <form class="form" id="login-form">
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email" id="input-email-login">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha" id="input-password-login">
+                    </label>
+                    <a class="password" href="#" id="forgot-password-link">Esqueceu sua senha?</a>
+                    <button class="btn btn-second" id="btn-login" type="submit">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="assets/js/pages/login.js"></script>
+</body>
+</html>

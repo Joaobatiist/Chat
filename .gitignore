@@ -1,0 +1,13 @@
+# Firebase Config (credenciais sensíveis)
+src/assets/js/config/firebase.js
+
+
+
+# Firebase cache e logs
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreeApp - Chat</title>
+    <link rel="stylesheet" href="../assets/css/chat.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    <div class="whatsapp-container">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="user-info">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <span id="user-name">Usuário</span>
+                </div>
+                <div class="header-actions">
+                    <button id="btn-logout" class="action-icon" title="Sair">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-users" placeholder="Pesquisar ou começar uma nova conversa">
+                </div>
+                <button id="btn-show-users" class="show-users-btn" title="Mostrar todos os usuários">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Novo Chat</span>
+                </button>
+            </div>
+            
+            <div class="chat-list" id="chat-list">
+                <!-- Lista de conversas -->
+                <div class="loading" id="chats-loading">Carregando conversas...</div>
+            </div>
+            
+            <div class="user-list" id="user-list" style="display: none;">
+                <!-- Lista de usuários para iniciar conversa -->
+                <div class="loading" id="users-loading">Carregando usuários...</div>
+            </div>
+        </div>
+        
+        <!-- Chat Area -->
+        <div class="chat-area" id="chat-area">
+            <div class="welcome-screen" id="welcome-screen">
+                <div class="welcome-content">
+                    <i class="fas fa-comment"></i>
+                    <h2>Chat Web</h2>
+                    <p>Selecione uma conversa para começar a enviar mensagens</p>
+                </div>
+            </div>
+            
+            <div class="chat-container" id="chat-container" style="display: none;">
+                <div class="chat-header">
+                    <button class="back-button" id="back-button" style="display: none;">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <div class="contact-info">
+                        <div class="contact-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 id="contact-name">Nome do Contato</h3>
+                            <span id="contact-status">online</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="messages-area" id="messages-area">
+                    <!-- Mensagens aparecerão aqui -->
+                </div>
+                
+                <div class="message-input-area">
+                    <div class="input-container">
+                        <input type="text" id="message-input" placeholder="Digite uma mensagem">
+                        <button id="send-button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="../assets/js/pages/chat.js"></script>
+</body>
+</html>
